@@ -18,6 +18,7 @@
 
 Для того чтобы бот мог отправлять сообщения в канал Discord, нужно предоставить ему токен авторизации.
 https://timeweb.com/ru/community/articles/kak-poluchit-svoy-token-v-discord тут гайд
+
 Потом в коде меняем
 ```python
 TOKEN = "your_token_here"
