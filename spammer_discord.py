@@ -7,9 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from manager_gpt import GptClient
 
 # ID канала или ветки
-#CHANNEL_OR_THREAD_ID = "1319450142914646069"
-
-CHANNEL_OR_THREAD_ID = "1320853576221851686" 
+CHANNEL_OR_THREAD_ID = "1319450142914646069"
 
 # URL для отправки сообщения
 URL = f"https://discord.com/api/v9/channels/{CHANNEL_OR_THREAD_ID}/messages"
@@ -21,7 +19,7 @@ TOKENS_FILE = "tokens.txt"
 MESSAGES_FILE = "messages.txt"
 
 # Прокси-сервер в формате login:password:ip:port (если используется)
-PROXY = "user161722:e61ra0@146.247.105.132:7547"
+PROXY = "log:pass@ip:port"
 
 # Настройка прокси для requests
 proxies = {
@@ -144,7 +142,7 @@ def main():
                     process_account_gpt(token, message)
                     cur_count += 1
                     time.sleep(15)
-        # Создаем пул потоков для одновременной отправки
+
         case _:
             print("Выбран неизвестный вариант")
 
