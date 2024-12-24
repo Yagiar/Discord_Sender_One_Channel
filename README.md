@@ -11,7 +11,7 @@
    Выполните следующую команду для установки нужных библиотек:
 
    ```bash
-   pip install requests colorama
+   pip install requests colorama openai
 ## Настройка
 
 ### 1. Токен авторизации
